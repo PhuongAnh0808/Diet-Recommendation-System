@@ -1,0 +1,143 @@
+/* ===== Reset font & background ===== */
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', sans-serif !important;
+    background-color: #f6f6f9 !important;
+}
+
+/* ===== General Spacing ===== */
+.block-container {
+    padding-top: 1rem !important;
+}
+
+/* ===== HEADERS ===== */
+h1, h2, h3 {
+    font-weight: 800 !important;
+    color: #111 !important;
+}
+
+h1 {
+    font-size: 2.4rem !important;
+    border-left: 7px solid #d62828;
+    padding-left: 24px !important; /* <-- CHỈ SỬA DÒNG NÀY */
+}
+
+h2 {
+    font-size: 1.75rem !important;
+    border-left: 5px solid #b81f1f;
+    padding-left: 18px !important; /* <-- VÀ DÒNG NÀY */
+}
+
+h3 {
+    font-size: 1.3rem !important;
+}
+
+/* ===== METRIC CARDS ===== */
+.stMetric {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    border: 1px solid #e3e3e3 !important;
+}
+
+/* ===== BUTTONS ===== */
+button[kind="primary"] {
+  background-color: #d62828 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  border: none !important;
+  transition: 0.2s ease-in-out;
+}
+
+button[kind="primary"]:hover {
+  background-color: #a81d1d !important;
+  transform: scale(1.02);
+}
+
+/* ===== EXPANDERS ===== */
+.streamlit-expanderHeader {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+}
+
+.streamlit-expanderContent {
+  background: #fafafa !important;
+  border-left: 3px solid #d62828 !important;
+  padding-left: 12px !important;
+}
+
+/* ===== IMAGES ===== */
+img {
+    border-radius: 10px !important;
+    max-height: 200px !important;
+    object-fit: cover !important;
+}
+
+/* ===== SPECIAL STYLE FOR MAIN PAGE TITLE ===== */
+h1:first-of-type {
+    border-left: none !important;        /* Remove red line */
+    padding-left: 0 !important;          /* Reset spacing */
+    color: #b81f1f !important;           /* Red title */
+    text-shadow: 0px 0px 1px #00000030;  /* Slight outline for emphasis */
+    font-weight: 900 !important;         /* Strong bold */
+}
+
+/* ===== Style subtitle text under main title ===== */
+h1:first-of-type + p {
+    font-weight: 600 !important;
+    color: #333 !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Fix calories metric font size only */
+div[data-testid="stMetricValue"] {
+    font-size: 2.0rem !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+}
+
+/* Force bold for input labels (Age, Height, Weight, Gender, Activity) */
+.st-emotion-cache-16txqwo p {
+    font-weight: 700 !important;
+    color: #111 !important;
+}
+
+/* ===== Glass Effect Form Container ===== */
+.stForm {
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    padding: 32px 40px !important;
+    margin-top: 20px !important;
+    transition: 0.25s ease-in-out;
+}
+
+/* Slight hover highlight */
+.stForm:hover {
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
+}
+
+/* ===== Input Glass Style ===== */
+.stNumberInput input,
+.stTextInput input,
+div[data-baseweb="select"] > div,
+.stSelectbox > div,
+.stSlider,
+.stRadio {
+    background: rgba(255, 255, 255, 0.35) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    transition: 0.25s ease-in-out;
+}
+
+/* Hover effect for inputs */
+.stNumberInput input:hover,
+.stTextInput input:hover,
+div[data-baseweb="select"] > div:hover {
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
+}
